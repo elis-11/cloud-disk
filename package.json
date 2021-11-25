@@ -1,7 +1,7 @@
 {
   "name": "ejs-bookstore",
   "version": "1.0.0",
-  "description": "This site shows a book store that displays books, the information of which comes from two collections in the MongoDB database. The Mongoose ODM (Object Document Mapper) is used to connect (with `ref` and `populate()`) the two schemas for the collections **Books** and **Persons** much as `JOIN` does in an SQL database between tables.",
+  "description": "",
   "type": "module",
   "main": "index.js",
   "scripts": {

@@ -1,0 +1,56 @@
+body {
+  background-color: #250303;
+  color: #b9b799;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.5rem;
+  padding: 20px;
+}
+
+body div.book {
+  background-color: #471616;
+  margin: 0 0 20px 0;
+  color: #ccc;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body div.book img {
+  width: 120px;
+  -webkit-box-shadow: 3px 3px 13px 3px #000000;
+          box-shadow: 3px 3px 13px 3px #000000;
+}
+
+body div.book div.info {
+  margin: 0 0 0 25px;
+}
+
+body div.book div.title {
+  font-size: 1.8rem;
+}
+
+body div.book div.author .main {
+  font-size: 1.4rem;
+  font-style: italic;
+  color: #ebeb9a;
+}
+
+body div.book ul.customers {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+body div.book ul.customers li {
+  margin: 0 0 0 -15px;
+  font-style: italic;
+}
+
+body div.book ul.customers li .email {
+  color: #777;
+}
+
+body div.book div.header {
+  margin: 0 0 4px -39px;
+}
+/*# sourceMappingURL=main.css.map */

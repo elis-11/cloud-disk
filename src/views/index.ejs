@@ -1,11 +1,19 @@
-<%- include('_header.ejs')%>
-	<h2>
-		<%=pageTitle%>
-	</h2>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Tech Bookstore</title>
+</head>
+<body>
+    <h1>Tech Bookstore</h1>
+	<p>there are <%=books.length%> books</p>
 	<% books.forEach(book=> { %>
 		<div class="book">
 			<a href="<%=book.url%>" target="_blank"> <img src="images/<%=book.isbn%>.jpg"
-				 alt=""></a>
+				alt=""></a>
 			<div class="info">
 				<div class="title">
 					<%=book.title%>
@@ -27,5 +35,6 @@
 			</div>
 		</div>
 		<% });
-		   %>
-			<%- include('_footer.ejs')%>
+		%>
+</body>
+</html>
