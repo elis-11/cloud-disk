@@ -1,0 +1,55 @@
+[
+	{
+		"_id": {
+			"$oid": "619ed146277300f67de3fbb7"
+		},
+		"title": "Advanced API Security",
+		"author": "619eb62977b92af7bb30299d",
+		"url": "https://www.amazon.de/Advanced-API-Security-OAuth-Beyond/dp/1484220498",
+		"customers": [
+			"619ece858558d24cf378e67a",
+			"619ece858558d24cf378e679"
+		],
+		"isbn": "1484220498"
+	},
+	{
+		"_id": {
+			"$oid": "619ed146277300f67de3fbb8"
+		},
+		"title": "Practical JAMstack",
+		"author": "619ece858558d24cf378e67b",
+		"url": "https://www.amazon.de/Practical-JAMstack-Blazing-Simple-Development/dp/1484261763",
+		"customers": [
+			"619ece858558d24cf378e678",
+			"619ece858558d24cf378e679"
+		],
+		"isbn": "1484261763"
+	},
+	{
+		"_id": {
+			"$oid": "619ed146277300f67de3fbb9"
+		},
+		"title": "Seven Databases in Seven Weeks",
+		"author": "619ece858558d24cf378e67c",
+		"url": "https://www.amazon.de/Seven-Databases-Weeks-Modern-Movement/dp/1680502530",
+		"customers": [
+			"619ece858558d24cf378e677",
+			"619ece858558d24cf378e676",
+			"619ece858558d24cf378e675",
+			"619ece858558d24cf378e674"
+		],
+		"isbn": "1680502530"
+	},
+	{
+		"_id": {
+			"$oid": "619ed146277300f67de3fbba"
+		},
+		"title": "Socket.IO Cookbook",
+		"author": "619ece858558d24cf378e67d",
+		"url": "https://www.amazon.de/Socket-IO-Cookbook-English-Tyson-Cadenhead/dp/1785880861",
+		"customers": [
+			"619ece858558d24cf378e678"
+		],
+		"isbn": "1785880861"
+	}
+]
