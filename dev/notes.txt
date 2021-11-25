@@ -1,0 +1,8 @@
+
+		<div class="book">
+			<%=book.title%> (<%=book.author.lastName%>)
+					<% book.customers.forEach(customer=> { %>
+						<%=customer.firstName%>
+							<% })%>
+								<% });
+								   </div>

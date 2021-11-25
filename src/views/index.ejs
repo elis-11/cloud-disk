@@ -1,0 +1,31 @@
+<%- include('_header.ejs')%>
+	<h2>
+		<%=pageTitle%>
+	</h2>
+	<% books.forEach(book=> { %>
+		<div class="book">
+			<a href="<%=book.url%>" target="_blank"> <img src="images/<%=book.isbn%>.jpg"
+				 alt=""></a>
+			<div class="info">
+				<div class="title">
+					<%=book.title%>
+				</div>
+				<div class="author">by <span class="main">
+						<%=book.author.firstName%>
+							<%=book.author.lastName%>
+					</span></div>
+				<ul class="customers">
+				<div class="header">People who have bought this book:</div>
+					<% book.customers.forEach(customer=> { %>
+						<li>
+							<%=customer.firstName%>
+								<%=customer.lastName%>
+					<span class="email">(<%=customer.email%>)</span>
+						</li>
+						<% })%>
+				</ul>
+			</div>
+		</div>
+		<% });
+		   %>
+			<%- include('_footer.ejs')%>
