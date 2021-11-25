@@ -10,9 +10,10 @@ const booksSchema = mongoose.Schema({
 	url: String,
 	customers: [{ type: Schema.ObjectId, ref: 'Person' }],
 	isbn: String,
-	comments: [{ message: String, datetime: String }],
+	comments: [{ type: Schema.ObjectId, ref: String }],
 },
  { collection: "books" });
+ 
 const BooksModel = mongoose.model("Book", booksSchema);
 
 export default BooksModel;

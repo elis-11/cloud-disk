@@ -27,20 +27,16 @@
 				<div class="header">People who have bought this book:</div>
 					<% book.customers.forEach(customer=> { %>
 						<li>
-							<%=customer.firstName%>
-								<%=customer.lastName%>
+							<%=customer.firstName%> <%=customer.lastName%>
 					<span class="email">(<%=customer.email%>)</span>
 						</li>
-					<% book.comments.forEach(comment=> { %>
-						<li>
-							<%=comment.message%>
-								<%=comment.datetime%>
-						</li>
+
+						<% })%> <% book.comments.forEach(comment=> { %>
+						<li><%=comment.message%> <%=comment.datetime%></li>
 						<% })%>
 				</ul>
 			</div>
 		</div>
-		<% });
-		%>
+		<% }); %>
 </body>
 </html>

@@ -19,7 +19,6 @@ app.get('/', async (req, res) => {
 	res.render('index', {
 		pageTitle: "Tech Bookstore",
 		books,
-		comments: "comments"
 	});
 });
 
