@@ -31,6 +31,11 @@
 								<%=customer.lastName%>
 					<span class="email">(<%=customer.email%>)</span>
 						</li>
+					<% book.comments.forEach(comment=> { %>
+						<li>
+							<%=comment.message%>
+								<%=comment.datetime%>
+						</li>
 						<% })%>
 				</ul>
 			</div>
