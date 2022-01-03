@@ -44,9 +44,9 @@ const Navbar = () => {
                     className='navbar__search'
                     type="text"
                     placeholder="Название файла..."/>}
-                {!isAuth && <div className="navbar__login"><NavLink to="/login">Войти</NavLink></div> }
-                {!isAuth && <div className="navbar__registration"><NavLink to="/registration">Регистрация</NavLink></div> }
-                {isAuth && <div className="navbar__login" onClick={() => dispatch(logout()) }>Выход</div> }
+                {!isAuth && <div className="navbar__login"><NavLink to="/login">Login</NavLink></div> }
+                {!isAuth && <div className="navbar__registration"><NavLink to="/registration">Registration</NavLink></div> }
+                {isAuth && <div className="navbar__login" onClick={() => dispatch(logout()) }>Logout</div> }
                 {isAuth && <NavLink to='/profile'>
                     <img className="navbar__avatar" src={avatar} alt=""/>
                 </NavLink>}
