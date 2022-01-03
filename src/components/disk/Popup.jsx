@@ -18,11 +18,11 @@ const Popup = () => {
         <div className="popup" onClick={() => dispatch(setPopupDisplay('none'))} style={{display: popupDisplay}}>
             <div className="popup__content" onClick={(event => event.stopPropagation())}>
                 <div className="popup__header">
-                    <div className="popup__title">Создать новую папку</div>
-                    <button className="popup__close" onClick={() => dispatch(setPopupDisplay('none'))}>X</button>
+                    <div className="popup__title">create new folder</div>
+                    <button className="popup__close" onClick={() => dispatch(setPopupDisplay('none'))}>delete</button>
                 </div>
-                <Input type="text" placeholder="Введите название папки..." value={dirName} setValue={setDirName}/>
-                <button className="popup__create" onClick={() => createHandler()}>Создать</button>
+                <Input type="text" placeholder="enter folder name..." value={dirName} setValue={setDirName}/>
+                <button className="popup__create" onClick={() => createHandler()}>create</button>
             </div>
         </div>
     );

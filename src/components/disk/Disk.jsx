@@ -64,18 +64,18 @@ const Disk = () => {
     return ( !dragEnter ?
             <div className="disk" onDragEnter={dragEnterHandler} onDragLeave={dragLeaveHandler} onDragOver={dragEnterHandler}>
                 <div className="disk__btns">
-                    <button className="disk__back" onClick={() => backClickHandler()}>Назад</button>
-                    <button className="disk__create" onClick={() => showPopupHandler()}>Создать папку</button>
+                    <button className="disk__back" onClick={() => backClickHandler()}>back</button>
+                    <button className="disk__create" onClick={() => showPopupHandler()}>create a folder</button>
                     <div className="disk__upload">
-                        <label htmlFor="disk__upload-input" className="disk__upload-label">Загрузить файл</label>
+                        <label htmlFor="disk__upload-input" className="disk__upload-label">download</label>
                         <input multiple={true} onChange={(event)=> fileUploadHandler(event)} type="file" id="disk__upload-input" className="disk__upload-input"/>
                     </div>
                     <select value={sort}
                             onChange={(e) => setSort(e.target.value)}
                             className='disk__select'>
-                        <option value="name">По имени</option>
-                        <option value="type">По типу</option>
-                        <option value="date">По дате</option>
+                        <option value="name">by name</option>
+                        <option value="type">by type</option>
+                        <option value="date">by date</option>
                     </select>
                     <button className="disk__plate" onClick={() => dispatch(setFileView('plate'))}/>
                     <button className="disk__list" onClick={() => dispatch(setFileView('list'))}/>
@@ -86,7 +86,7 @@ const Disk = () => {
             </div>
             :
             <div className="drop-area" onDrop={dropHandler} onDragEnter={dragEnterHandler} onDragLeave={dragLeaveHandler} onDragOver={dragEnterHandler}>
-                Перетащите файлы сюда
+                drag files here
             </div>
     );
 };

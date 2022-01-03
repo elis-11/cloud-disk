@@ -43,7 +43,7 @@ const Navbar = () => {
                     onChange={e => searchChangeHandler(e)}
                     className='navbar__search'
                     type="text"
-                    placeholder="Название файла..."/>}
+                    placeholder="file name..."/>}
                 {!isAuth && <div className="navbar__login"><NavLink to="/login">Login</NavLink></div> }
                 {!isAuth && <div className="navbar__registration"><NavLink to="/registration">Registration</NavLink></div> }
                 {isAuth && <div className="navbar__login" onClick={() => dispatch(logout()) }>Logout</div> }
