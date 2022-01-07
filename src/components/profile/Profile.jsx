@@ -12,8 +12,8 @@ const Profile = () => {
 
     return (
         <div>
-            <button onClick={() => dispatch(deleteAvatar())}>Удалить аватар</button>
-            <input accept="image/*" onChange={e => changeHandler(e)} type="file" placeholder="Загрузить аватар"/>
+            <button onClick={() => dispatch(deleteAvatar())}>delete avatar</button>
+            <input accept="image/*" onChange={e => changeHandler(e)} type="file" placeholder="download avatar"/>
         </div>
     );
 };

@@ -12,7 +12,7 @@ const Uploader = () => {
     return ( isVisible &&
         <div className="uploader">
             <div className="uploader__header">
-                <div className="uploader__title">Загрузки</div>
+                <div className="uploader__title">downloads</div>
                 <button className="uploader__close" onClick={() => dispatch(hideUploader())}>X</button>
             </div>
             {files.map(file =>
